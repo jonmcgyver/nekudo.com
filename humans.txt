@@ -1,0 +1,9 @@
+/* TEAM */                            
+Name: Simon Samtleben
+Github: https://github.com/lemmingzshadow/
+Twitter: https://twitter.com/lemmingzshadow/
+Location: Cologne, Germany
+  
+/* SITE */
+Standards: PHP, HTML5, CSS3, Javascript
+Components: Textpress (http://textpress.shameerc.com/), PrismJS (http://prismjs.com/)

@@ -1,0 +1,115 @@
+body {	
+	background-color: #f5f6f6;
+	color: #424242;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+body > .container {	
+	margin: 0 auto;
+	width: 760px;
+}
+
+/** Navbar **/
+.nekudo-nav {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 50px;
+}
+.nekudo-nav:after {
+	clear: both;
+	content: " ";
+    display: table;
+}
+.nekudo-nav ul {	
+	margin: 0 auto;	
+	padding: 0;
+	width: 760px;
+	color: #696969;
+	list-style-type: none;
+}
+.nekudo-nav ul li {
+	display: block;
+	float: left;
+}
+.nekudo-nav ul li.active {
+	background-color: #ddd;
+}
+.nekudo-nav ul li a {
+	display: block;
+	color: #696969;	
+	text-decoration: none;
+	padding: 10px;
+}
+.nekudo-nav ul li a:hover {
+	color: #2b2b2b;
+}
+.nekudo-nav ul li.first a {
+	padding-left: 0;
+	font-weight: bold;
+}
+.nekudo-nav ul li.last a {
+	padding-right: 0;
+}
+
+/** Content **/
+.nekudo-content {	
+	margin-bottom: 30px;
+}
+.nekudo-content .postmeta {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #696969;
+}
+.nekudo-content article {
+	margin-bottom: 40px;
+}
+.nekudo-content article .more {
+	margin-top: 4px;
+}
+.nekudo-content article .tags {
+	margin-top: 40px;
+}
+.nekudo-content article .tag {
+	margin-right: 5px;
+}
+.nekudo-content article pre {
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 4px;
+	font-size: 14px;
+}
+
+/** Footer **/
+footer {	
+	text-align: center;
+	font-size: 11px;
+}
+
+/** Typo **/
+.hl-sm {
+	color: #808080;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+/** Links **/
+a {
+	color: #1978d4;
+	text-decoration: none;
+}
+a:hover {
+	color: #1460aa;
+}
+a.btn {
+	background-color: #1978d4;
+	color: #fff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+a.btn:hover {
+	background-color: #1460aa;
+}
