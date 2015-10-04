@@ -21,34 +21,34 @@ using the extensions - or maybe even want to fork them - you can find them in my
 
 For historical reasons here's the extensions changelog:
 
-
-*Version 1.0.3 (2014-08-23)*
+<pre><code class="language-markdown">
+**Version 1.0.3 (2014-08-23)**
 
 * Whitelist updates.
 * Url changes.
 
-*Version 1.0.2 (2014-02-23)*
+**Version 1.0.2 (2014-02-23)**
 
 * Added possibility to exclude folders from file modification scan.
 * Minor layout improvements.
 * Updated signature and whitelist database.
 
-*Version 1.0.1 (2014-01-25)*
+**Version 1.0.1 (2014-01-25)**
 
 * Bugfix in filestack creation.
 * Bugfix: Max. results in rulesets not saved.
 
-*Version 1.0.0 (2013-11-24)*
+**Version 1.0.0 (2013-11-24)**
 
 * First stable release.
 * Feature: Option to set if report-mail is send on empty report.
 
-*Version 0.4.1 (2013-11-09)*
+**Version 0.4.1 (2013-11-09)**
 
 * Improvements in filestack creation.
 * Updated whitelist for Joomla 3.2
 
-*Version 0.4.0 (2013-11-03)*
+**Version 0.4.0 (2013-11-03)**
 
 * Feature: Automatic signature updates.
 * Feature: Submit whitelist requests and malware reports to nekudo.com.
@@ -57,7 +57,7 @@ For historical reasons here's the extensions changelog:
 * Bugfix: Problem when running cronjob and web-scan at the same time.
 * Multiple minor bugfixes/improvements in source-code.
 
-*Version 0.3.0 (2013-10-06)*
+**Version 0.3.0 (2013-10-06)**
 
 * New feature: Check files for changes by hash-values.
 * New feature: Possibility to run Wemahu via cronjob.
@@ -65,7 +65,7 @@ For historical reasons here's the extensions changelog:
 * Performace improvements on machines with little memory.
 * Updated regex database.
 
-*Version 0.2.0 (2013-09-23)*
+**Version 0.2.0 (2013-09-23)**
 
 * Improvements in session-storage of reports.
 * Added max-result parameters.
@@ -73,6 +73,7 @@ For historical reasons here's the extensions changelog:
 * Added whitelist feature.
 * Performance improvements while fetching filelist.
 
-*Version 0.1.0 (2013-08-04)*
+**Version 0.1.0 (2013-08-04)**
 
 * First version.
+</code></pre>
