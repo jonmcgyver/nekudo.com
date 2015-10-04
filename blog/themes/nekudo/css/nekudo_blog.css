@@ -62,6 +62,7 @@ body > .container {
 .nekudo-content .postmeta {
 	margin-bottom: 10px;
 	font-size: 14px;
+	font-style: italic;
 	color: #696969;
 }
 .nekudo-content article {
