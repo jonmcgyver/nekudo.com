@@ -8,7 +8,7 @@
 	<meta name="author" content="<?php echo $global['author.name']; ?>">
 	<meta name="description" content="<?php echo $global['site.description']; ?>">
 	<link rel="alternate" type="application/rss+xml" title="" href="<?php echo $global['assets.prefix'];?>/feed">
-	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/nekudo_blog.css" rel="stylesheet">
+	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/nekudo_blog.css?v=20151004" rel="stylesheet">
 	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/prism.css" rel="stylesheet">
 </head>
 <body>

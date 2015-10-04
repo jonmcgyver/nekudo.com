@@ -9,7 +9,8 @@ body {
 }
 body > .container {	
 	margin: 0 auto;
-	width: 760px;
+	padding: 0 10px;
+	max-width: 780px;
 }
 
 /** Navbar **/
@@ -25,8 +26,8 @@ body > .container {
 }
 .nekudo-nav ul {	
 	margin: 0 auto;	
-	padding: 0;
-	width: 760px;
+	padding: 0 10px;
+	max-width: 780px;
 	color: #696969;
 	list-style-type: none;
 }
