@@ -44,12 +44,10 @@ return array(
 				'month'		=>'([1-9]|[01][0-2])'
 			)
 		),
-		/*
 		'about' => array(
-			'route' 	=> '/about',
-			'template' 	=> 'about'
+			'route' 	=> '/imprint',
+			'template' 	=> 'imprint'
 		),
-		*/
 		'rss' 	=> array(
 			'route' 	=> '/feed(.xml)',
 			'template' 	=> 'rss',

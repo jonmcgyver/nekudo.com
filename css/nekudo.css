@@ -18,16 +18,16 @@ body a {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(/images/overlays/07.png);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAAA3NCSVQICAjb4U/gAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP/AOW3MEoAAAAJcEhZcwAAAsQAAALEAVuRnQsAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDUvMDIvMTGI8AGbAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAABBJREFUCJljuMCwgKGAYQEACsgCgf/CoqoAAAAASUVORK5CYII=);
 }
 .content {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 500px;
-	height: 140px;
+	height: 180px;
 	margin-left: -250px;
-	margin-top: -70px;
+	margin-top: -90px;
 	text-align: center;
 }
 .content h1 {
@@ -44,38 +44,25 @@ body a {
 	font-weight: normal;
 	text-shadow: 1px 1px 1px #000;
 }
-
-footer {
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-}
-.imprint {
-	float: left;
-	margin-right: 6px;
-	font-size: 12px;
-	line-height: 18px;
+.content nav {
 	background: rgba(0,0,0, 0.8);
+	border-radius: 4px;
+	font-size: 15px;
+	margin-top: 45px;
+}
+.content nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.content nav ul li {
+	display: inline-block;
+}
+.content nav ul li a {
+	display: block;
+	text-decoration: none;
 	padding: 10px;
-	border-radius: 4px;
 }
-.blog {
-	float: left;
-	margin-right: 6px;
-	background: rgba(0,0,0, 0.8);
-	border-radius: 4px;
-	bottom: 10px;
-}
-.blog img {
-	height: 69px;
-}
-.github {
-	float: left;
-	background: rgba(0,0,0, 0.8);
-	border-radius: 4px;
-	bottom: 10px;
-}
-.github img {
-	height: 59px;
-	padding: 5px;
+.content nav ul li a:hover {
+	text-decoration: underline;
 }

@@ -78,9 +78,10 @@ body > .container {
 	margin-right: 5px;
 }
 .nekudo-content article pre {
-	border-radius: 3px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
 	background-color: #fff;
-	padding: 4px;
+	padding: 0 10px 20px 10px;
 	font-size: 14px;
 }
 
@@ -95,6 +96,12 @@ footer {
 	color: #808080;
 	font-size: 11px;
 	text-transform: uppercase;
+}
+
+/** Misc **/
+img.centered {
+	margin: 0 auto;
+	display: block;
 }
 
 /** Links **/

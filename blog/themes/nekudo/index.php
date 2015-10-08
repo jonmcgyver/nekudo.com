@@ -13,7 +13,7 @@
 			</header>
 
 			<section class="content">
-				<?php echo $article->getSummary(250); ?>&hellip;
+				<?php echo $article->getSummary(300); ?>&hellip;
 			</section>
 			<div class="more">
 				<a href="<?php echo $article->getUrl(); ?>" class="btn">Read on &raquo;</a>
