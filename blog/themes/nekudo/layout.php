@@ -12,13 +12,15 @@
 	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/prism.css" rel="stylesheet">
 </head>
 <body>
-
+<?php $active = ($global['route'] === 'imprint') ? 'imprint' : 'blog'; ?>
 <nav class="nekudo-nav">
 	<ul>
 		<li class="first"><a href="/">nekudo.com</a></li>
-		<li class="active"><a href="/blog/">Blog</a></li>
-		<li class="last"><a href="https://github.com/nekudo">Github</a></li>
-	</ul>	
+		<li<?php if($active === 'blog'): ?> class="active"<?php endif; ?>><a href="/blog/">Blog</a></li>
+        <li<?php if($active === 'imprint'): ?> class="active"<?php endif; ?>><a href="/blog/imprint">Imprint</a></li>
+		<li><a href="https://github.com/nekudo">Github</a></li>
+        <li class="last"><a href="https://twitter.com/lemmingzshadow">Twitter</a></li>
+	</ul>
 </nav>
 
 <div class="container">

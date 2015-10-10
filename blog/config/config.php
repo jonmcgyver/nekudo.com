@@ -44,7 +44,7 @@ return array(
 				'month'		=>'([1-9]|[01][0-2])'
 			)
 		),
-		'about' => array(
+		'imprint' => array(
 			'route' 	=> '/imprint',
 			'template' 	=> 'imprint'
 		),
