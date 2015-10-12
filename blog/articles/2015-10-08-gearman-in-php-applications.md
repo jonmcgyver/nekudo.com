@@ -1,7 +1,7 @@
 {
     "title":"Microservices in PHP using Gearman",
     "description": "Tutorial on how to use Gearman to implement and control PHP microservices.",
-    "date" : "08-10-2015",
+    "date" : "2015-10-08",
     "slug" : "mircroservices-in-php-using-gearman",
     "author" : "Simon",
     "tag" : "php, gearman, microservice",

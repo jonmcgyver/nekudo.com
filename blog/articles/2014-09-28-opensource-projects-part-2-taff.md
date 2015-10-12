@@ -1,6 +1,6 @@
 {
 	"title":"Opensource Projects - Part 2: Taff",
-	"date" : "28-09-2014",
+	"date" : "2014-09-28",
 	"slug" : "opensource-projects-part2-taff",
 	"author" : "Simon",
 	"tag" : "php, twitter",
@@ -30,10 +30,10 @@ Follower creation is done by scanning the twitter public timeline for tweets con
 This script should also be executed periodically using a cronjob. I is responsible for creating tweets in your managed twitter accounts.
 
 To generate tweets it uses a given list of RSS feeds and keywords. This feeds are periodically scanned for new articles containig the given keywords. If an article conatains one of the keywords the links is tweeted and "recommanded" to your followers. The keywords used to find articles are the same as the ones which are used to follow users. This ensures the content you recommend is matching the interests of you followers.
-  
+
 ## Conclusion
 
-As mentioned above - this script is really old and relatively basic. But it gives you a basic idea of how automatic follower creation on twitter works. 
+As mentioned above - this script is really old and relatively basic. But it gives you a basic idea of how automatic follower creation on twitter works.
 
 Now you know why you got so many new followers the last time you tweeted "iphone" ;)
 

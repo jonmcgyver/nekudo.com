@@ -1,7 +1,7 @@
 {
 	"title":"New blog theme",
     "description": "The nekudo.com blog has a new theme.",
-	"date" : "03-10-2015",
+	"date" : "2015-10-03",
 	"slug" : "new-blog-theme",
 	"author" : "Simon",
 	"tag" : "news",

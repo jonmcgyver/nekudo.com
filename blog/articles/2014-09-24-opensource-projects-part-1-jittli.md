@@ -1,6 +1,6 @@
 {
  "title":"Opensource Projects - Part 1: jitt.li",
- "date" : "24-09-2014",
+ "date" : "2014-09-24",
  "slug" : "opensource-projects-part1-jittli",
  "author" : "Simon",
  "tag" : "php, websockets, redis, twitter",
