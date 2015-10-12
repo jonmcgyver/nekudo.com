@@ -1,5 +1,6 @@
 {
 	"title":"New blog theme",
+    "description": "The nekudo.com blog has a new theme.",
 	"date" : "03-10-2015",
 	"slug" : "new-blog-theme",
 	"author" : "Simon",
@@ -11,7 +12,7 @@ I'm planning to bring a little more live into this blog again and therefore I ne
 The old one was too dark not suitable for reading longer texts. So I decided to invest a few hours
 an put together some CSS for a new blog theme.
 
-The new theme is supposed to be simple and optimized for readability - nothing fancy like all the 
+The new theme is supposed to be simple and optimized for readability - nothing fancy like all the
 stuff you'll find on themeforest e.g. While choosing the new colors I stumbled
 across [Color Safe](http://colorsafe.co/) which seems to be a nice online tool to create color palettes
 with focus on readability.

@@ -1,5 +1,6 @@
 {
 	"title":"New Project: ShinyGeoip",
+    "description": "Announcing geoip.nekudo.com - a free geolocation API.",
 	"date" : "20-12-2014",
 	"slug" : "new-project-shiny-geoip",
 	"author" : "Simon",

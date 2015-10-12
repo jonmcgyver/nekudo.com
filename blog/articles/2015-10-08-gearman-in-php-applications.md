@@ -1,5 +1,6 @@
 {
     "title":"Microservices in PHP using Gearman",
+    "description": "Tutorial on how to use Gearman to implement and control PHP microservices.",
     "date" : "08-10-2015",
     "slug" : "mircroservices-in-php-using-gearman",
     "author" : "Simon",
@@ -38,7 +39,7 @@ a simple HTTP REST API. But what if we want multiple instances of our services w
 to distribute the services accross multiple servers? Or even implement a service in another language because it seems
 more suitable for the given task? The Gearman Job Server already provides all this features.
 
-Using Gearman we can start as many worker accross as many servers as we like. This makes our application extremely 
+Using Gearman we can start as many worker accross as many servers as we like. This makes our application extremely
 scalable. If our application generates lots of task for a special service - we just start more workers handling
 this task. If our workers consume lots of resources - we just add a new server and fire up some more workers.
 
@@ -54,29 +55,29 @@ this would be the Gearman job server and the Gearman PHP extension) we can start
 class WorkerExample
 {
     private $gearmanWorker;
-    
+
     public function  __construct()
     {
         $this->gearmanWorker = new GearmanWorker;
-        $this->gearmanWorker->addServer('127.0.0.1', 4730); 
+        $this->gearmanWorker->addServer('127.0.0.1', 4730);
         $this->startup();
     }
-    
+
     private function startup()
     {
         $this->gearmanWorker->addFunction('foobar', [$this, 'foobar']);
         while($this->gearmanWorker->work());
     }
-    
+
     public function foobar($Job)
     {
         $payload = json_decode($Job->workload());
-    
+
         // Do some actual work here...
         var_dump($payload);
     }
 }
- 
+
 $Worker = new WorkerExample;
 </code></pre>
 
@@ -124,29 +125,29 @@ class NamedWorkerExample
 {
     private $gearmanWorker;
     private $workerName;
-    
+
     public function  __construct($workerName)
     {
         $this->workerName = $workerName;
         $this->gearmanWorker = new GearmanWorker;
-        $this->gearmanWorker->addServer('127.0.0.1', 4730); 
+        $this->gearmanWorker->addServer('127.0.0.1', 4730);
         $this->startup();
     }
-    
+
     private function startup()
     {
         $this->gearmanWorker->addFunction('foobar', [$this, 'foobar']);
-        
+
         // This does the trick:
         $this->GearmanWorker->addFunction('ping_' . $this->workerName, [$this, 'ping']);
-        
+
         while($this->gearmanWorker->work());
     }
-    
+
     public function foobar($Job)
     {
         $payload = json_decode($Job->workload());
-    
+
         // Do some actual work here...
         var_dump($payload);
     }
@@ -155,7 +156,7 @@ class NamedWorkerExample
     {
         $Job->sendData('pong');
     }
-    
+
     $Worker = new NamedWorkerExample('w1');
 }
 </code></pre>
@@ -192,7 +193,7 @@ It would reply to the ping request - but not before it is done resizing the imag
 to e.g. 5 seconds but the resizing of an image would take 10 seconds our script would kill the worker process
 although it was totally okay. So this is not a good solution.
 
-Here is my solution for monitoring worker processes: 
+Here is my solution for monitoring worker processes:
 
 1. I always start more workers than actually needed. So if one process dies there are still some other workers
 which can process the jobs and the application remains functional.
@@ -205,7 +206,7 @@ the process by e.g. using the worker name as filename.
 4. I use a cronjob to regularly check the pid files. If a timestamp is greater then a defined timeout the corresponding
 process is killed and restarted. It is important that the timeout is greater then the jobs usually take so we can make
 sure not to kill processes that are busy but still responding.
- 
+
 *Hint: There will be code samples implementing this solution in the next part of this article.*
 
 
@@ -246,6 +247,6 @@ the workers are alive and restarts them if necessary using the monitoring method
 In my opinion Gearman is a powerful tool to implement the mircoservies pattern into a PHP application. It allows
 us to pass jobs from our application to the single services or workers. Additionally provides an easy solution
 when it comes to scaling. We can just fire up new services across multiple servers without changing a single line of
-code. 
+code.
 
 I definitely recommend to give it a try! Happy hacking.

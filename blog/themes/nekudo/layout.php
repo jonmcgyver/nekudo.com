@@ -1,3 +1,7 @@
+<?php
+$active = ($global['route'] === 'imprint') ? 'imprint' : 'blog';
+$description = (!empty($global['description'])) ? $global['description'] : $global['site.description'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +10,12 @@
 	<title><?php echo $title .' | '. $global['site.name']; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="<?php echo $global['author.name']; ?>">
-	<meta name="description" content="<?php echo $global['site.description']; ?>">
+	<meta name="description" content="<?php echo $description; ?>">
 	<link rel="alternate" type="application/rss+xml" title="" href="<?php echo $global['assets.prefix'];?>/feed">
 	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/nekudo_blog.css?v=20151004" rel="stylesheet">
 	<link href="<?php echo $global['assets.prefix'];?>/themes/nekudo/css/prism.css" rel="stylesheet">
 </head>
 <body>
-<?php $active = ($global['route'] === 'imprint') ? 'imprint' : 'blog'; ?>
 <nav class="nekudo-nav">
 	<ul>
 		<li class="first"><a href="/">nekudo.com</a></li>

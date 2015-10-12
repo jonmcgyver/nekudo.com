@@ -1,5 +1,6 @@
 {
     "title":"ShinyGeoip project status",
+    "description": "A 10 month after launch review of geoip.nekudo.com",
     "date" : "11-10-2015",
     "slug" : "shinygeoip-project-status",
     "author" : "Simon",

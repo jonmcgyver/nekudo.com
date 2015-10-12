@@ -1,5 +1,6 @@
 {
 	"title":"Wemahu - Project discontinued",
+    "description": "A short statement on wemahu.com shutdown.",
 	"date" : "04-10-2015",
 	"slug" : "wemahu-discontinued",
 	"author" : "Simon",

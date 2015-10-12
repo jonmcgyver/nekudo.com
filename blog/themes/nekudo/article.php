@@ -9,7 +9,7 @@
 	</header>
 
 	<section class="content">
-		<?php echo $article->getContent(); ?>		
+		<?php echo $article->getContent(); ?>
 		<div class="tags">
 			<div class="hl-sm">Tags</div>
 			<?php $tags = []; ?>
