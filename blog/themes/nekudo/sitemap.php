@@ -6,7 +6,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 	<url>
 		<loc><?php echo $baseUrl;?></loc>
 		<lastmod><?php echo date('c', strtotime('-1 days'));?></lastmod>
-		<changefreq>monthly</changefreq>
+		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 	<?php if(!empty($sitemapData)): ?>
@@ -14,7 +14,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 			<url>
 				<loc><?php echo $data['loc']; ?></loc>
 				<lastmod><?php echo $data['lastmod']; ?></lastmod>
-				<changefreq><?php echo $data['changefreq']; ?></changefreq>
+				<changefreq>weekly</changefreq>
 				<priority><?php echo $data['priority']; ?></priority>
 			</url>
 		<?php endforeach; ?>
