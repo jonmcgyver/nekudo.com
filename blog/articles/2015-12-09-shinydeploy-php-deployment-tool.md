@@ -14,7 +14,7 @@ and hopefully find some beta-testers.
 
 ## Introducing ShinyDeploy
 
-ShinyDeploy is a deployment tool for web applications written in PHP an JavaScript. It's supposed to provide an
+ShinyDeploy is a deployment tool for web applications written in PHP and JavaScript. It's supposed to provide an
 easy way to deploy files from your GIT repository like GitHub or Bitbucket to your webserver.
 
 You can find the installation instructions at the [projects GitHub page](https://github.com/nekudo/shiny_deploy).
