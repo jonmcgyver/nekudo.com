@@ -9,8 +9,8 @@
 }
 
 When it comes to (mysql) database optimization the most common practice is to
-[normalize your database](https://en.wikipedia.org/wiki/Database_normalization) structure. In general this a good idea
-but when it comes to performance a completely normalized database is not always the best solution.
+[normalize your database](https://en.wikipedia.org/wiki/Database_normalization) structure. In general this is a good
+idea but when it comes to performance a completely normalized database is not always the best solution.
 
 For a better understanding of the following text I will use the following example data:
 
@@ -84,7 +84,7 @@ Table shirts
 
 I simply added a new column called "colors" which contains the sum of all available color-ids for each shirt - e.g:
 Shirt "Homer" is available in Red (1) and Green (4) so "colors" is 1 + 4 = 5. The cool thing about bitmasks is that
-this sum is always unique - meaning only from this sum we can know which colors a shirt is available in.
+this sum is always unique - meaning only from this sum we know in which colors a shirt is available.
 
 Here is some sample code converting the sum of our ids back into the single values:
 
@@ -118,10 +118,11 @@ This would return a list of all shirts available in either red or green.
 ## Conclusion
 
 Using bitmasks can help you to improve the performance of your SQL queries in some cases. Of course you have to carefully
-check if this technique useful in your case. For example I would not suggest using bitmask if the list of attributes
-(e.g the colors) can become very long. Additionally you have to clear that you will store some redundant data in your
-database if you would change the structure of your table like in the above example.
+check if this technique is useful in your case. For example I would not suggest using bitmask if the list of attributes
+(e.g the colors) can become very long. Additionally you have to be clear that you will store redundant data in your
+database if you change the structure of your tables according to the above example.
 
 Using bitmasks is no magic-bullet to solve database performance issues but it can help in some cases - and I hope now
-you have a basic understanding of how bitmasks work when it comes to databases and can maybe use them in your next
-project. Happy coding!
+you have a basic understanding of how bitmasks work and can maybe use them in your next project.
+
+ Happy coding!
