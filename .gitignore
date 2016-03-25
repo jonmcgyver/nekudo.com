@@ -7,11 +7,11 @@
 .idea/
 
 # NetBeans
-/nbproject/
+/nbproject
 
 # OSX specific
 **.DS_Store
 
 # Project specific
-/blog/vendor
-/blog/cache/**
+/index.php
+/vendor
