@@ -1,8 +1,5 @@
 # nekudo.com
 
-**The nekudo.com website.**
+This repository contains contents and theme for my website [nekudo.com](https://nekudo.com).
 
-build with...
-
-* [TextPress](http://textpress.shameerc.com/)
-* [PrismJS](http://prismjs.com/)
+The website is based on the [ShinyBlog](https://github.com/nekudo/shiny_blog) Blog/Cms system.
