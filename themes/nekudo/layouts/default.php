@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?php echo $this->getTitle(); ?></title>
         <meta name="robots" content="<?php echo $this->getIndex(); ?>" />
         <meta name="description" content="<?php echo $this->getDescription(); ?>">
