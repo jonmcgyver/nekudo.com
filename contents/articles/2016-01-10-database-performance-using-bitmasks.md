@@ -119,6 +119,9 @@ SELECT * FROM shirts WHERE colors & 5 > 0;
 
 This would return a list of all shirts available in either red or green.
 
+But be careful: The query above can not make use of a MySQL index. In terms of performance it sometimes may be better to
+use a simple IN(x,y,z) query. _(Thx to Alan for this hint!)_
+
 ## Conclusion
 
 Using bitmasks can help you to improve the performance of your SQL queries in some cases. Of course you have to carefully
