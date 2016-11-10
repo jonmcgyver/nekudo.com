@@ -1,8 +1,8 @@
 {
-    "title": "Imprint",
-    "metaTitle": "nekudo.com - Imprint",
+    "title": "Contact",
+    "metaTitle": "nekudo.com - Contact",
     "description": "Legal and privacy information regarding nekudo.com website.",
-    "slug": "imprint",
+    "slug": "contact",
     "date" : "2016-01-23"
 }
 

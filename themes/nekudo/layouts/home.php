@@ -17,8 +17,7 @@
             <ul>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="https://github.com/nekudo">Github</a></li>
-                <li><a href="https://twitter.com/lemmingzshadow">Twitter</a></li>
-                <li><a href="/imprint">Imprint</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </div>

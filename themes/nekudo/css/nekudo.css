@@ -171,9 +171,9 @@ body.home .content {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 500px;
+	width: 480px;
 	height: 180px;
-	margin-left: -250px;
+	margin-left: -240px;
 	margin-top: -90px;
 	text-align: center;
 }

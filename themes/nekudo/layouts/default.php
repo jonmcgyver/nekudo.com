@@ -17,9 +17,8 @@
             <ul>
                 <li class="first"><a href="/">nekudo.com</a></li>
                 <li<?php if($navActive === 'blog'): ?> class="active"<?php endif; ?>><a href="/blog">Blog</a></li>
-                <li<?php if($navActive === 'imprint'): ?> class="active"<?php endif; ?>><a href="/imprint">Imprint</a></li>
-                <li><a href="https://github.com/nekudo">Github</a></li>
-                <li class="last"><a href="https://twitter.com/lemmingzshadow">Twitter</a></li>
+                <li<?php if($navActive === 'contact'): ?> class="active"<?php endif; ?>><a href="/contact">Contact</a></li>
+                <li class="last"><a href="https://github.com/nekudo">Github</a></li>
             </ul>
         </nav>
         <div class="content">

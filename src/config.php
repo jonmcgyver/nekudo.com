@@ -95,10 +95,10 @@ return [
             'route' => '/sitemap.xml',
             'action' => 'sitemap',
         ],
-        'imprint' => [
+        'contact' => [
             'method' => 'GET',
-            'route' => '/imprint',
-            'buildPattern' => '/imprint',
+            'route' => '/contact',
+            'buildPattern' => '/contact',
             'action' => 'page',
         ],
         'blog' => [
