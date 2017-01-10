@@ -51,7 +51,7 @@ composer require nekudo/angela
 
 After installing Angela you will find a folder _"vendor"_ in you project root which contains all libraries required to use
 the Angela framework. Angela comes with a few example files which can be found in _"vendor/nekudo/angela/example"_. To
-start a new application I recommend this folder to your project root and rename it to _"app"_. This folder will be the
+start a new application I recommend to copy this folder into your project root and rename it to _"app"_. This folder will be the
 base of you new application.
 
 ### Adjust the configuration
@@ -72,15 +72,15 @@ this:
 
 In this case there is one pool defined named _"pool\_a"_. The worker for this pool is named _"worker\_a.php"_ and will
 be started 3 times when you fire up the server. This means once you start the job-server there will be 3 workers of type
-_worker\_a_ and each of this workers can do one task at the same time. So if you have lots of tasks of one type you just
-can start more workers so jobs can be processed faster.
+_worker\_a_ and each of this workers can do one task at the same time. So if you have lots of tasks which can be
+handled by _worker\_a_ you can just start more workers and jobs can be processed faster.
 
 ## Writing your first worker
 
-After you configured the worker-processes you want to use you'll need to implement the actual workers.
+After you configured the worker-processes you want to use you'll need to actually implement those workers.
 
 For each worker you defined in the configuration there needs to be a corresponding file containing the code. In this
-example the worker can be found in you _app/worker_ folder and is called _worker\_a.php_. The content of a very basic
+example the worker can be found in your _app/worker_ folder and is called _worker\_a.php_. The content of a very basic
 worker looks like this:
 
 ```php
@@ -109,8 +109,8 @@ $worker->run();
 Each worker needs to extend the Angela _Worker_ class and should contain at least one job-type it can handle.
  
 In this example the worker can handle one type of job called _taskA_ which does nothing more than sleep for a short
-period of time and than return the payload you send to the worker and its own id. I a real world application these
-files would contain the code to do the actual work you want to farm out of you main application like e.g. resizing 
+period of time and than return the payload you sent to the worker and its own id. In a real world application these
+files would contain the code to do the actual work you want to farm out of you main application - like e.g. resizing 
 images, sending emails, crawling feeds and so on.
 
 ## Starting the job server
@@ -148,7 +148,7 @@ Jobs completed per worker:
 
 ## Passing jobs to a worker
 
-When you server is up and running you can now pass jobs from you application to the job-server by using the Angela
+When your server is up and running you can now pass jobs from you application to the job-server by using the Angela
 Client:
 
 ```php
@@ -161,13 +161,13 @@ $result = $client->doNormal('taskA', 'some workload');
 $client->close();
 ```
 
-This sort example init the Angela client, connects to the job-server and send one job-request of type "taskA"
-to the server. It than waits for the result of the job. As soon as a worker has processed this job request, the worker
+This sort example inits the Angela client, connects to the job-server and sends one job-request of type "taskA"
+to the server. It than waits for the result of the job. As soon as a worker has processed this job, the worker
 sends back the result of the job to the job-server which than forwards this result back to the client.
 
 This example of course would block your application until the result of the job is received. But in many cases you
-don't need an actual result e.g. if you just want to resize an uploaded image to some predefined sizes. In this case
-you can use the _doBackground_ method.
+don't need an actual result - e.g. if you just want to resize an uploaded image to some predefined sizes. In this case
+you can use the _doBackground_ method:
 
 ```php
 <?php
@@ -181,7 +181,7 @@ $client->close();
 
 This code will trigger the same job-request as the previous code but it will not wait until the job is completed.
 You will just receive a job-id and your application can continue to process code right away. This is extremely useful
-if you have some operations running relatively long and you don't want a user to wait for a page to load.
+if you have some operations running relatively long and you don't want your users to wait for the page to load.
   
 ##Conclusion
 
