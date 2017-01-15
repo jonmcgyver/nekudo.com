@@ -1,6 +1,6 @@
 {
     "title": "Moving from Nginx to aerys - an experiment",
-    "metaTitle": "Building PHP microservices using Angela worker framework",
+    "metaTitle": "Replacing nginx with aerys at ShinyGeoip - an experiment",
     "description": "An article about my experiences trying to use the aerys application server instead of nginx for my geolocation API at geoip.nekudo.com.",
     "date": "2017-01-15",
     "slug": "moving-shinygeoip-from-nginx-to-aerys",
