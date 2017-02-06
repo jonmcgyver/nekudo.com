@@ -1,6 +1,6 @@
 {
     "title": "Using LetsEncrypt in a multi-server environment",
-    "metaTitle": "LetsEncrypt SSL in a Round-Robin DNS setup",
+    "metaTitle": "Using LetsEncrypt in a multi-server environment",
     "description": "A short article on how to use SSL certificates from Let's Encrypt in a multi-server environment with multiple DNS A-records.",
     "date": "2017-02-05",
     "slug": "letsencrypt-in-a-multiserver-environment",
